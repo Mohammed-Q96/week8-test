@@ -2,7 +2,7 @@
 
 ### Tasks:
 
-This test build up on the week 7 test, where only signed in user will be able to add a city and get the cities.
+This test build up on the week 7 test, now to contunie for this week the task is that only signed in user will be able to add a city and get the cities.
 
 
 #### Setting the project
