@@ -5,5 +5,5 @@ const getCities = () => {
 };
 
 module.exports = {
-  getCities,
+  getCities
 };

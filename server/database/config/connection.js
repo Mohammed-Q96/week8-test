@@ -7,7 +7,7 @@ if (!dbUrl) throw new Error('No Database URL!!!');
 
 const options = {
   connectionString: dbUrl,
-  ssl: true,
+  ssl: true
 };
 
 module.exports = new Pool(options);
