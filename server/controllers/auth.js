@@ -8,7 +8,6 @@ exports.auth = (req, res, next) => {
       req.user = { isLogged };
       next();
     } else {
-      console.log('inside auth');
       res.redirect('/');
     }
   });

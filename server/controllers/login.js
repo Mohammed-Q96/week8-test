@@ -2,7 +2,6 @@ const { join } = require('path');
 const { compare } = require('bcrypt');
 const { sign } = require('jsonwebtoken');
 const { getUser } = require('../database/queries/getUser');
-console.log(process.env.secret);
 
 exports.renderLogin = (_req, res) => {
   res.sendFile(join(__dirname, '..', '..', 'public', 'login.html'));
@@ -11,9 +10,7 @@ exports.renderLogin = (_req, res) => {
 exports.postL = (req, res, next) => {
   const { email, password } = req.body;
   getUser(email)
-    .then(result => {
-      return result.rows[0];
-    })
+    .then(result => result.rows[0])
     .then(foundedUser => compare(password, foundedUser.password))
     .then(Pass => {
       if (Pass) {

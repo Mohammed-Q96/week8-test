@@ -4,6 +4,7 @@ const { client, server } = require('./error');
 const { renderCities, getAllCities, add } = require('./city');
 const { renderSignup, post } = require('./signup');
 const { renderLogin, postL } = require('./login');
+const { logOut } = require('./logout');
 
 router.get('/login', renderLogin);
 router.get('/signup', renderSignup);
@@ -12,6 +13,7 @@ router.post('/login', postL);
 
 router.use(auth);
 
+router.get('/logout', logOut);
 router.get('/cities', renderCities);
 router.get('/all-cities', getAllCities);
 router.post('/add-city', add);
