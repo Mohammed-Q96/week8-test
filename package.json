@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
-    "build": "my-framework build --output public"
+    "dev": "nodemon server/index.js"
   },
   "repository": {
     "type": "git",
