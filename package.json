@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "nodemon server/index.js",
-    "build": "my-framework build --output public"
+    "build": "week8-test build --output public"
   },
   "repository": {
     "type": "git",
